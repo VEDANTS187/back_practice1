@@ -10,7 +10,7 @@ app.use(cors({
 app.use(urlencoded({extended:true,limit:"20kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
-
+app.use(express.json());
 
 
 import userRouter from "./routes/users.routes.js"
